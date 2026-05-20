@@ -26,8 +26,10 @@ header {
 
 #photo {
 
-    width: 140px;
+    /* Ancho del elemento */
+    width: 8vw;
 
+    /* Alto del elemento */
     height: auto;
 
     border-radius: 10px;
@@ -40,7 +42,16 @@ h1 {
     font-weight: bold;
 }
 
-nav ul {
+.subtitle {
+
+    /* Color del texto en negro */
+    color: black;
+
+    /* Transformación del texto a mayúsculas */
+    text-transform: uppercase;
+}
+
+nav > ul {
 
     display: flex;
 
@@ -48,6 +59,7 @@ nav ul {
 
     gap: 25px;
 
+    /* Eliminar los estilos de lista predeterminados */
     list-style: none;
 
     padding: 0;
