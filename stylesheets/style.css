@@ -21,15 +21,20 @@ header {
 
     align-items: center;
 
+    justify-content: center;
+
     gap: 25px;
+}
+
+header div {
+
+    text-align: center;
 }
 
 #photo {
 
-    /* Ancho del elemento */
     width: 8vw;
 
-    /* Alto del elemento */
     height: auto;
 
     border-radius: 10px;
@@ -44,10 +49,8 @@ h1 {
 
 .subtitle {
 
-    /* Color del texto en negro */
     color: black;
 
-    /* Transformación del texto a mayúsculas */
     text-transform: uppercase;
 }
 
@@ -59,10 +62,11 @@ nav > ul {
 
     gap: 25px;
 
-    /* Eliminar los estilos de lista predeterminados */
     list-style: none;
 
     padding: 0;
+
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -74,9 +78,21 @@ nav a {
     font-weight: bold;
 }
 
-#proyectos table th {
+#proyectos table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+#proyectos table th,
+#proyectos table td {
 
     text-align: left;
+
+    padding: 10px;
+
+    border-bottom: 1px solid #cedddd;
 }
 
 #sugerencias form {
@@ -94,7 +110,8 @@ nav a {
 }
 
 #sugerencias input,
-#sugerencias textarea {
+#sugerencias textarea,
+#sugerencias select {
 
     width: 100%;
 
@@ -105,6 +122,27 @@ nav a {
     border-radius: 5px;
 
     font: inherit;
+
+    background-color: white;
+
+    box-sizing: border-box;
+}
+
+.form-title {
+
+    font-weight: bold;
+
+    margin-top: 1rem;
+
+    margin-bottom: 0.3rem;
+}
+
+#sugerencias input[type="radio"],
+#sugerencias input[type="checkbox"] {
+
+    width: auto;
+
+    margin-right: 0.5rem;
 }
 
 #sugerencias button {
@@ -150,16 +188,64 @@ section {
 
     margin-bottom: 1.2rem;
 
-    /* borde redondeado con un radio de 5 píxeles */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 
-    /* sombra a un elemento */
     -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
     -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+
+    background-color: white;
 }
+
+/* ---------- TESTIMONIOS ---------- */
+
+#testimonios article {
+
+    margin-bottom: 1.2rem;
+
+    padding: 1rem;
+
+    background-color: #f9f9f9;
+
+    border-radius: 5px;
+}
+
+#testimonios blockquote {
+
+    margin: 0;
+
+    font-style: italic;
+}
+
+#testimonios p {
+
+    margin-top: 0.7rem;
+
+    font-weight: bold;
+}
+
+/* ---------- MULTIMEDIA ---------- */
+
+.media-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 20px;
+}
+
+.media-grid iframe,
+.media-grid img {
+
+    width: 100%;
+
+    border-radius: 5px;
+}
+
+/* ---------- FOOTER ---------- */
 
 footer p {
 

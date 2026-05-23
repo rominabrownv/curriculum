@@ -255,12 +255,113 @@
                 <label for="email">Correo electrónico</label>
                 <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
 
-                <label for="mensaje">Tu sugerencia</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu sugerencia aquí" required></textarea>
+                <!-- LISTA DESPLEGABLE -->
+                <label for="motivo">Motivo del contacto</label>
 
-                <button type="submit">Enviar sugerencia</button>
+                <select id="motivo" name="motivo">
+
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="trabajo">Oportunidad laboral</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="consulta">Consulta</option>
+
+                </select>
+
+                <!-- SELECCIÓN ÚNICA -->
+                <p class="form-title">¿Cómo calificarías este CV?</p>
+
+                <label>
+                    <input type="radio" name="calificacion" value="excelente">
+                    Excelente
+                </label>
+
+                <label>
+                    <input type="radio" name="calificacion" value="bueno">
+                    Bueno
+                </label>
+
+                <label>
+                    <input type="radio" name="calificacion" value="regular">
+                    Regular
+                </label>
+
+                <!-- SELECCIÓN MÚLTIPLE -->
+                <p class="form-title">Áreas de interés</p>
+
+                <label>
+                    <input type="checkbox" name="interes" value="desarrollo-web">
+                    Desarrollo Web
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interes" value="analisis-datos">
+                    Análisis de Datos
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interes" value="base-datos">
+                    Bases de Datos
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interes" value="power-bi">
+                    Power BI
+                </label>
+
+                <!-- ÁREA DE TEXTO -->
+                <label for="mensaje">Tu sugerencia</label>
+
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu sugerencia aquí"
+                    required></textarea>
+
+                <button type="submit">
+                    Enviar sugerencia
+                </button>
 
             </form>
+
+        </section>
+
+        <section id="testimonios">
+
+            <h2 class="subtitle">Testimonios</h2>
+
+            <article>
+
+                <blockquote>
+                    "Romina demostró compromiso, responsabilidad y gran capacidad analítica durante el desarrollo de
+                    proyectos."
+                </blockquote>
+
+                <p>
+                    Ana López — Coordinadora de Marketing Digital
+                </p>
+
+            </article>
+
+            <article>
+
+                <blockquote>
+                    "Trabajar con Romina fue una experiencia positiva gracias a su iniciativa y habilidades técnicas."
+                </blockquote>
+
+                <p>
+                    Carlos Mendoza — Desarrollador Backend
+                </p>
+
+            </article>
+
+            <article>
+
+                <blockquote>
+                    "Destacó por su aprendizaje rápido y colaboración efectiva dentro del equipo."
+                </blockquote>
+
+                <p>
+                    Sofía Ramírez — Analista de Datos
+                </p>
+
+            </article>
 
         </section>
 
@@ -273,7 +374,8 @@
 
                 <div class="map">
                     <h3>Ubicación — Guayaquil, Ecuador</h3>
-                    <iframe src="https://www.google.com/maps?q=Guayaquil,Ecuador&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps?q=Guayaquil,Ecuador&output=embed" width="600" height="450"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
                 <div class="image">
@@ -283,8 +385,12 @@
 
                 <div class="video">
                     <h3>Video de YouTube</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ysz5S6PUM-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>URL del video: <a href="https://www.youtube.com/watch?v=ysz5S6PUM-U" target="_blank">https://www.youtube.com/watch?v=ysz5S6PUM-U</a></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/o_v9MY_FMcw?si=Ki0fW_mFpfavqOxN"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>URL del video: <a href="https://youtu.be/o_v9MY_FMcw?si=9Sr_AbQWd6OIl8vY"
+                            target="_blank">https://www.youtube.com/watch?v=ysz5S6PUM-U</a></p>
                 </div>
 
             </div>
